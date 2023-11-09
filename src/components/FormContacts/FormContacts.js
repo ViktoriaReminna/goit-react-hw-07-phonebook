@@ -1,7 +1,5 @@
 import { addContact } from '../../redux/beckendAPI';
 
-import { nanoid } from 'nanoid';
-
 import React from 'react';
 
 import { useState } from 'react';
@@ -11,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { StyledForm, StyledField, Label, Button } from './FormContacts.styled';
 
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { getContacts } from 'redux/selectors';
 

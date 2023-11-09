@@ -17,14 +17,16 @@ export const ContactFilter = () => {
   };
 
   return (
-    <InputFilter
-      type="text"
-      name="filter"
-      placeholder="Find contacts by name"
-      onChange={event => {
-        onChange(event);
-      }}
-      value={filtered}
-    />
+    <label name="filter">
+      <InputFilter
+        type="text"
+        name="filter"
+        placeholder="Find contacts by name"
+        onChange={event => {
+          onChange(event);
+        }}
+        value={filtered}
+      />
+    </label>
   );
 };

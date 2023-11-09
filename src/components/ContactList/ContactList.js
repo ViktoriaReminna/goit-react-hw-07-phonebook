@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 
-import { ContactListItem } from './ContactList.styled';
+import { ContactListItem, Wrapper } from './ContactList.styled';
 
 import { getFiltered } from '../../redux/selectors';
 
@@ -14,16 +14,16 @@ export const ContactList = () => {
     dispatch(deleteContact(id));
   };
   return (
-    <div>
+    <Wrapper>
       <ul>
-        {contacts.length > 0 ? (
+        {contacts && contacts.length > 0 ? (
           contacts.map(({ id, name, number }) => (
             <ContactListItem key={id}>
               {name + ': ' + number}
               <button
                 type="button"
                 onClick={() => handleDelete(id)}
-                aria-label={`Delete contact`}
+                aria-label="Delete contact"
               >
                 Delete
               </button>
@@ -33,6 +33,6 @@ export const ContactList = () => {
           <p>Sorry! You have no contacts created.</p>
         )}
       </ul>
-    </div>
+    </Wrapper>
   );
 };

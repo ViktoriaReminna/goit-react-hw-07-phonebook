@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   line-height: 1.5;
+  color: #008080;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background:  #f5fcf6 url(https://www.trip-ukraine.com.ua/wp-content/uploads/2021/11/imgonline-com-ua-Resize-Grr4jhbEGpKan-1-e1637943776271.jpg) 0 0 / cover no-repeat;
 }
 
 code {
