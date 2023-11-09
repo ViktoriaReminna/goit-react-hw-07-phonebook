@@ -25,7 +25,7 @@ export const Title2 = styled.h1`
   font-size: 30px;
   margin-top: 35px;
 `;
-export const Title3 = styled.h1`
+export const Title3 = styled.p`
   margin: 0px auto;
   display: block;
   text-align: center;
